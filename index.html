@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кинотеатр</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-container">
+    <div id="movie-description">
+        <img id="movie-image" src="assets/images/ezgif-3-f0a3b7bd14.jpg" alt="Movie Poster">
+      <div id="movie-text">
+        <h3>Тайна волшебного леса</h3>
+        <p>Маленькая команда отважных животных отправляется в захватывающее путешествие по магическому лесу, чтобы найти древнее сокровище. Новый анимационный фильм с участием звёздных голосов, включая Еву Грин и Тома Хиддлстона.</p>
+      </div>
+    </div>
+    
+    <div id="booking-container">
+      <div id="calendar-container">
+        <h2>Выберите дату</h2>
+        <div id="calendar"></div>
+      </div>
+
+      <div id="slots-container">
+        <h2>Выберите сеанс</h2>
+        <div id="sessions"></div>
+      </div>
+    </div>
+    
+    <div id="ticket-container">
+      <div id="ticket-selector" style="display:none;">
+        <label for="ticket-count">Количество билетов:</label>
+        <button id="decrease-ticket">-</button>
+        <input type="number" id="ticket-count" min="1" value="1">
+        <button id="increase-ticket">+</button>
+        <button id="book-ticket" disabled>Забронировать</button>
+      </div>
+      <div id="notification" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

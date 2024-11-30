@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #main-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #movie-description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  #movie-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  #movie-text {
+    max-width: 500px;
+  }
+  
+  #calendar-container,
+  #slots-container {
+    width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Календарь с днями */
+  #calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px; /* Это добавляет 10px пробела между днями */
+    margin-bottom: 10px; /* Это добавляет пробел между календарем и слотами */
+    padding: 0;
+  }
+  
+  .calendar-button {
+    width: 120px;  /* Ширина кнопки */
+    height: 40px;
+    background-color: #42d5c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 0 0 auto; /* Элементы не будут растягиваться */
+  }
+  
+  .selected-date {
+    background-color: #32b7a0;
+  }
+  
+  /* Слоты для сеансов */
+  #sessions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px; /* Это добавляет 10px пробела между слотами */
+    margin-bottom: 20px; /* Пробел между сеансами и остальными элементами */
+    padding: 0;
+  }
+  
+  #sessions button {
+    width: 130px;  /* Ширина кнопки */
+    height: 40px;
+    background-color: #42d5c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 0 0 auto; /* Элементы не будут растягиваться */
+  }
+  
+  #sessions button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+  }
+  
+  #sessions button:hover {
+    background-color: #32b7a0;
+  }
+  
+  #ticket-container {
+    width: 800px;
+    text-align: center;
+  }
+  
+  #ticket-selector {
+    margin-top: 20px;
+  }
+  
+  button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+  }
+  
+  #notification {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #42d5c0;
+    font-weight: bold;
+  }
+  
